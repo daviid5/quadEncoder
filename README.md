@@ -1,0 +1,2 @@
+# quadEncoder
+Encoding quadrature Encoder
