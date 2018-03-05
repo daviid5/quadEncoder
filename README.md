@@ -1,7 +1,7 @@
 # quadEncoder
 Encoding quadrature Encoder
 
-developed for an TI TM4C micocontroller
+developed for an TI TM4C microcontroller
 
 should be useable with little changed with every other microcontroller
 
