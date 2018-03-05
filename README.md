@@ -13,6 +13,13 @@ should be useable with little changed with every other microcontroller
 #define ENCODER_FL_A          GPIO_PIN_2
 #define ENCODER_FL_B          GPIO_PIN_3
 
+typedef struct
+{
+    //wheel encoder (counts since last read out)
+    int32_t    wheelFL_c;
+} ECU_Internal_t;
+
+ECU_Internal_t                ECU_Internal;
 EncoderStatus_t               EncoderStatus[4];
 
 setupEncoderHardware(&EncoderStatus[0], ENCODER_VEHICLE_COUNT_DOWN,   ENCODER_FL_PORT_A, ENCODER_FL_PORT_B, ENCODER_FL_A, ENCODER_FL_B, &ECU_Internal.wheelFL_c);
